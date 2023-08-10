@@ -40,9 +40,11 @@ class Products extends CI_Controller {
                 $data['description']=$this->input->post('description');
                 $data['price']=$this->input->post('price');
                 $data['quantity']=$this->input->post('quantity');
+                $data['image']=$this->input->post('image');
                 $response=$this->Add_products->storeproduct($data);
                 if($response>0)
                 {
+                    move_uploaded_file($_FILES["image"]["tmp_name"],'uploads/products/'.$response.'.png' );
                     $this->session->set_flashdata('success','Data Added Successfully');
                     redirect('products');
                 }
@@ -64,6 +66,7 @@ class Products extends CI_Controller {
            $data['description']=$this->input->post('udescription');
            $data['price']=$this->input->post('uprice');
            $data['quantity']=$this->input->post('uquantity');
+           
            $response=$this->Add_products->updateproduct($data,$id);
            //print_r($response);die;
            if($response>0)

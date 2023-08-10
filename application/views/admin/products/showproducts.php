@@ -30,6 +30,7 @@
                                             <th scope="col">Description</th>
                                             <th scope="col"><i class="fas fa-rupee-sign"></i>&nbsp;Price</th>
                                             <th scope="col"><i class="fas fa-sort-amount-up"></i>&nbsp;Quantity</th>
+                                            <th scope="col"><i class="fas fa-file-image"></i>&nbsp;Image</th>
                                             <th scope="col">Action</th>
                                         </tr>
                                     </thead>
@@ -54,6 +55,7 @@
                                                 <td><?php echo $product->description;?></td>
                                                 <td><i class="fas fa-rupee-sign"></i>&nbsp;<?php echo $product->price;?></td>
                                                 <td><?php echo $product->quantity;?></td>
+                                                <td class="text-center"><img src="<?php echo base_url('uploads/products/'.$product->id.'.png');?>" height="60" width="60"/></td>
                                                 <td class='text-center'><a class='text-info' href="<?php echo base_url('Products/editproduct?id='.$product->id);?>"><i class="fa fa-edit"></i></a>&nbsp; |
                                                     &nbsp; <a class='text-danger' href="<?php echo base_url('Products/deleteproducts?id='.$product->id);?>"><i class="fa fa-trash"></i></a></td>
                                             </tr>

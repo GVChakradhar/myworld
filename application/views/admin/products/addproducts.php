@@ -28,8 +28,11 @@
                                     <div class="col">
                                         <label for="quantity" class="form-label"><i class="fas fa-sort-amount-up"></i>&nbsp;Quantity Required</label>
                                         <input name="quantity" type="number" class="form-control" id="quantity" required>
-                                       
                                     </div>
+                                </div>
+                                <div class="mb-3">
+                                        <label for="image" class="form-label"><i class="fas fa-file-image"></i>&nbsp;Image</label>
+                                        <input name="image" type="file" class="form-control" id="image" required>
                                 </div>
                                
                             <button name="submit" value="post" type="submit" class="btn btn-primary">Submit</button>

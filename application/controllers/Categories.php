@@ -24,9 +24,9 @@ class Categories extends CI_Controller {
     //    echo "<pre/>";
     //    print_r($_POST);
     //    print_r($_FILES);die;
-        $this->form_validation->set_rules('name', 'name', 'required');
-        $this->form_validation->set_rules('description', 'description', 'required');
-        $this->form_validation->set_rules('image', 'image', 'required');
+        $this->form_validation->set_rules('name', 'name', 'trim|required',  array('required' => 'Please Enter the Valid Category Name'));
+        $this->form_validation->set_rules('description', 'description', 'required',  array('required' => 'Please Enter the VAlid Description'));
+        $this->form_validation->set_rules('image', 'image', 'required',  array('required' => 'Please Upload the Valid Image file'));
 
         if ($this->form_validation->run() == FALSE)
         {
@@ -39,7 +39,7 @@ class Categories extends CI_Controller {
             {
                 $data['name']=$this->input->post('name');
                 $data['description']=$this->input->post('description');
-                //$data['image']=$this->input->post('image');
+                $data['image']=$this->input->post('image');
                 $response=$this->Add_categories->storecategory($data);
                 if($response>0)
                 {
