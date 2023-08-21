@@ -4,6 +4,11 @@ Class Add_categories extends CI_Model{
 
 	function getcategories(){
 		return $this->db->order_by('id','desc')->get('categories')->result();
+		return $this->db->get('categories')->result();
+	}
+	function getcategoriesname(){
+		//return $this->db->order_by('id','desc')->get('categories')->result();
+		return $this->db->get('categories')->result();
 	}
 	function storecategory($data)
 	{

@@ -26,6 +26,7 @@
                                     <thead>
                                         <tr>
                                             <th scope="col">Id</th>
+                                            <th scope="col">Category Name</th>
                                             <th scope="col">Name</th>
                                             <th scope="col">Description</th>
                                             <th scope="col"><i class="fas fa-rupee-sign"></i>&nbsp;Price</th>
@@ -51,6 +52,7 @@
                                         ?>
                                             <tr>
                                                 <td><?php echo $i;?></td>
+                                                <td><?php echo $product->cat_name;?></td>
                                                 <td><?php echo $product->name;?></td>
                                                 <td><?php echo $product->description;?></td>
                                                 <td><i class="fas fa-rupee-sign"></i>&nbsp;<?php echo $product->price;?></td>

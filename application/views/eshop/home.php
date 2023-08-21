@@ -8,39 +8,39 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<!-- Title Tag  -->
-    <title>Eshop - eCommerce HTML5 Template.</title>
+    <title>My World <?php echo $page_title ?? '' ;?></title>
 	<!-- Favicon -->
-	<link rel="icon" type="image/png" href="<?php echo base_url('eshop_assets/eshop');?>images/favicon.png">
+	<link rel="icon" type="image/png" href="<?php echo base_url('assets/eshop_assets/eshop/images/favicon.png');?>">
 	<!-- Web Font -->
 	<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
 	
 	<!-- StyleSheet -->
 	
 	<!-- Bootstrap -->
-	<link rel="stylesheet" href="<?php echo base_url('eshop_assets/eshop/css/bootstrap.css');?>">
+	<link rel="stylesheet" href="<?php echo base_url('assets/eshop_assets/eshop/css/bootstrap.css');?>">
 	<!-- Magnific Popup -->
-    <link rel="stylesheet" href="<?php echo base_url('eshop_assets/eshop/css/magnific-popup.min.css');?>">
+    <link rel="stylesheet" href="<?php echo base_url('assets/eshop_assets/eshop/css/magnific-popup.min.css');?>">
 	<!-- Font Awesome -->
-    <link rel="stylesheet" href="<?php echo base_url('eshop_assets/eshop/css/font-awesome.css');?>">
+    <link rel="stylesheet" href="<?php echo base_url('assets/eshop_assets/eshop/css/font-awesome.css');?>">
 	<!-- Fancybox -->
-	<link rel="stylesheet" href="<?php echo base_url('eshop_assets/eshop/css/jquery.fancybox.min.css');?>">
+	<link rel="stylesheet" href="<?php echo base_url('assets/eshop_assets/eshop/css/jquery.fancybox.min.css');?>">
 	<!-- Themify Icons -->
-    <link rel="stylesheet" href="<?php echo base_url('eshop_assets/eshop/css/themify-icons.css');?>">
+    <link rel="stylesheet" href="<?php echo base_url('assets/eshop_assets/eshop/css/themify-icons.css');?>">
 	<!-- Nice Select CSS -->
-    <link rel="stylesheet" href="<?php echo base_url('eshop_assets/eshop/css/niceselect.css');?>">
+    <link rel="stylesheet" href="<?php echo base_url('assets/eshop_assets/eshop/css/niceselect.css');?>">
 	<!-- Animate CSS -->
-    <link rel="stylesheet" href="<?php echo base_url('eshop_assets/eshop/css/animate.css');?>">
+    <link rel="stylesheet" href="<?php echo base_url('assets/eshop_assets/eshop/css/animate.css');?>">
 	<!-- Flex Slider CSS -->
-    <link rel="stylesheet" href="<?php echo base_url('eshop_assets/eshop/css/flex-slider.min.css');?>">
+    <link rel="stylesheet" href="<?php echo base_url('assets/eshop_assets/eshop/css/flex-slider.min.css');?>">
 	<!-- Owl Carousel -->
-    <link rel="stylesheet" href="<?php echo base_url('eshop_assets/eshop/css/owl-carousel.css');?>">
+    <link rel="stylesheet" href="<?php echo base_url('assets/eshop_assets/eshop/css/owl-carousel.css');?>">
 	<!-- Slicknav -->
-    <link rel="stylesheet" href="<?php echo base_url('eshop_assets/eshop/css/slicknav.min.css');?>">
+    <link rel="stylesheet" href="<?php echo base_url('assets/eshop_assets/eshop/css/slicknav.min.css');?>">
 	
 	<!-- Eshop StyleSheet -->
-	<link rel="stylesheet" href="<?php echo base_url('eshop_assets/eshop/css/reset.css');?>">
-	<link rel="stylesheet" href="<?php echo base_url('eshop_assets/eshop/style.css');?>">
-    <link rel="stylesheet" href="<?php echo base_url('eshop_assets/eshop/css/responsive.css');?>">
+	<link rel="stylesheet" href="<?php echo base_url('assets/eshop_assets/eshop/css/reset.css');?>">
+	<link rel="stylesheet" href="<?php echo base_url('assets/eshop_assets/eshop/style.css');?>">
+    <link rel="stylesheet" href="<?php echo base_url('assets/eshop_assets/eshop/css/responsive.css');?>">
 
 	
 	
@@ -48,14 +48,14 @@
 <body class="js">
 	
 	<!-- Preloader -->
-	<!-- <div class="preloader">
+	<div class="preloader">
 		<div class="preloader-inner">
 			<div class="preloader-icon">
 				<span></span>
 				<span></span>
 			</div>
 		</div>
-	</div> -->
+	</div>
 	<!-- End Preloader -->
 	
 	
@@ -97,7 +97,7 @@
 					<div class="col-lg-2 col-md-2 col-12">
 						<!-- Logo -->
 						<div class="logo">
-							<a href="index.html"><img src="<?php echo base_url('eshop_assets/eshop');?>images/logo.png" alt="logo"></a>
+							<a href="index.html"><img src="<?php echo base_url('assets/eshop_assets/eshop/images/logo.png');?>" alt="logo"></a>
 						</div>
 						<!--/ End Logo -->
 						<!-- Search Form -->
@@ -2346,7 +2346,7 @@
 						<!-- Single Widget -->
 						<div class="single-footer about">
 							<div class="logo">
-								<a href="index.html"><img src="<?php echo base_url('eshop_assets/eshop');?>images/logo2.png" alt="#"></a>
+								<a href="index.html"><img src="<?php echo base_url('assets/eshop_assets/eshop/images/logo2.png');?>" alt="#"></a>
 							</div>
 							<p class="text">Praesent dapibus, neque id cursus ucibus, tortor neque egestas augue,  magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</p>
 							<p class="call">Got Question? Call us 24/7<span><a href="tel:123456789">+0123 456 789</a></span></p>
@@ -2419,7 +2419,7 @@
 						</div>
 						<div class="col-lg-6 col-12">
 							<div class="right">
-								<img src="<?php echo base_url('eshop_assets/eshop');?>images/payments.png" alt="#">
+								<img src="<?php echo base_url('assets/eshop_assets/eshop/images/payments.png');?>" alt="#">
 							</div>
 						</div>
 					</div>
@@ -2430,36 +2430,36 @@
 	<!-- /End Footer Area -->
  
 	<!-- Jquery -->
-    <script src="<?php echo base_url('eshop_assets/eshop');?>js/jquery.min.js"></script>
-    <script src="<?php echo base_url('eshop_assets/eshop');?>js/jquery-migrate-3.0.0.js"></script>
-	<script src="<?php echo base_url('eshop_assets/eshop');?>js/jquery-ui.min.js"></script>
+    <script src="<?php echo base_url('assets/eshop_assets/eshop');?>js/jquery.min.js"></script>
+    <script src="<?php echo base_url('assets/eshop_assets/eshop');?>js/jquery-migrate-3.0.0.js"></script>
+	<script src="<?php echo base_url('assets/eshop_assets/eshop');?>js/jquery-ui.min.js"></script>
 	<!-- Popper JS -->
-	<script src="<?php echo base_url('eshop_assets/eshop');?>js/popper.min.js"></script>
+	<script src="<?php echo base_url('assets/eshop_assets/eshop');?>js/popper.min.js"></script>
 	<!-- Bootstrap JS -->
-	<script src="<?php echo base_url('eshop_assets/eshop');?>js/bootstrap.min.js"></script>
+	<script src="<?php echo base_url('assets/eshop_assets/eshop');?>js/bootstrap.min.js"></script>
 	<!-- Color JS -->
-	<script src="<?php echo base_url('eshop_assets/eshop');?>js/colors.js"></script>
+	<script src="<?php echo base_url('assets/eshop_assets/eshop');?>js/colors.js"></script>
 	<!-- Slicknav JS -->
-	<script src="<?php echo base_url('eshop_assets/eshop');?>js/slicknav.min.js"></script>
+	<script src="<?php echo base_url('assets/eshop_assets/eshop');?>js/slicknav.min.js"></script>
 	<!-- Owl Carousel JS -->
-	<script src="<?php echo base_url('eshop_assets/eshop');?>js/owl-carousel.js"></script>
+	<script src="<?php echo base_url('assets/eshop_assets/eshop');?>js/owl-carousel.js"></script>
 	<!-- Magnific Popup JS -->
-	<script src="<?php echo base_url('eshop_assets/eshop');?>js/magnific-popup.js"></script>
+	<script src="<?php echo base_url('assets/eshop_assets/eshop');?>js/magnific-popup.js"></script>
 	<!-- Waypoints JS -->
-	<script src="<?php echo base_url('eshop_assets/eshop');?>js/waypoints.min.js"></script>
+	<script src="<?php echo base_url('assets/eshop_assets/eshop');?>js/waypoints.min.js"></script>
 	<!-- Countdown JS -->
-	<script src="<?php echo base_url('eshop_assets/eshop');?>js/finalcountdown.min.js"></script>
+	<script src="<?php echo base_url('assets/eshop_assets/eshop');?>js/finalcountdown.min.js"></script>
 	<!-- Nice Select JS -->
-	<script src="<?php echo base_url('eshop_assets/eshop');?>js/nicesellect.js"></script>
+	<script src="<?php echo base_url('assets/eshop_assets/eshop');?>js/nicesellect.js"></script>
 	<!-- Flex Slider JS -->
-	<script src="<?php echo base_url('eshop_assets/eshop');?>js/flex-slider.js"></script>
+	<script src="<?php echo base_url('assets/eshop_assets/eshop');?>js/flex-slider.js"></script>
 	<!-- ScrollUp JS -->
-	<script src="<?php echo base_url('eshop_assets/eshop');?>js/scrollup.js"></script>
+	<script src="<?php echo base_url('assets/eshop_assets/eshop');?>js/scrollup.js"></script>
 	<!-- Onepage Nav JS -->
-	<script src="<?php echo base_url('eshop_assets/eshop');?>js/onepage-nav.min.js"></script>
+	<script src="<?php echo base_url('assets/eshop_assets/eshop');?>js/onepage-nav.min.js"></script>
 	<!-- Easing JS -->
-	<script src="<?php echo base_url('eshop_assets/eshop');?>js/easing.js"></script>
+	<script src="<?php echo base_url('assets/eshop_assets/eshop');?>js/easing.js"></script>
 	<!-- Active JS -->
-	<script src="<?php echo base_url('eshop_assets/eshop');?>js/active.js"></script>
+	<script src="<?php echo base_url('assets/eshop_assets/eshop');?>js/active.js"></script>
 </body>
 </html>

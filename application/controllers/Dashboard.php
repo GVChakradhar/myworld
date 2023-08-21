@@ -8,11 +8,13 @@ class Dashboard extends CI_Controller {
 	}
 	public function index()
 	{
+		$data['page_title']='Dashboard';
 		$data['page_name']='dashboard';
 		$this->load->view($this->page_path,$data);
 	}
 	public function users()
 	{
+		$data['page_title']='Users Table';
 		$data['page_name']='users';
 		$this->load->view($this->page_path,$data);
 	}

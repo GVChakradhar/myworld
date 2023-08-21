@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Dashboard</title>
+    <title>Dashboard <?php echo $page_name ?? '' ;?></title>
     <?php $this->load->view('admin/layouts/header');?>
 
 </head>

@@ -10,29 +10,31 @@ class Categories extends CI_Controller {
 	 public function index()
 	 {
 		$data['page_name']='categories/showcategories';
+        $data['page_title']='Categories Details';
         $data['categories_list']=$this->Add_categories->getcategories();
 		$this->load->view($this->page_path,$data);
 	 }
     public function addcategories()
 	 {
 		$data['page_name']='categories/addcategories';
+        $data['page_title']='Categories Adding Form';
 		$this->load->view($this->page_path,$data);
 	 }
     public function addcategory()
     {
        /*Check submit button */
-    //    echo "<pre/>";
-    //    print_r($_POST);
-    //    print_r($_FILES);die;
-        $this->form_validation->set_rules('name', 'name', 'trim|required',  array('required' => 'Please Enter the Valid Category Name'));
-        $this->form_validation->set_rules('description', 'description', 'required',  array('required' => 'Please Enter the VAlid Description'));
-        $this->form_validation->set_rules('image', 'image', 'required',  array('required' => 'Please Upload the Valid Image file'));
-
+        //echo "<pre/>";
+        $this->form_validation->set_rules('name', 'name', 'required', array('required' => 'Enter the valid name'));
+        $this->form_validation->set_rules('description', 'description', 'required', array('required' => 'Enter the valid Description'));
+       // $this->form_validation->set_rules('image', 'image', 'required');
+    //    print_r($_FILES);
+    //    die;
         if ($this->form_validation->run() == FALSE)
         {
             $this->session->set_flashdata('error','Enter the Valid Input');
-            redirect('categories/addcategory');
+            redirect('categories/addcategories');
         }
+
         else
         {
             if($this->input->post('submit'))
@@ -113,6 +115,7 @@ class Categories extends CI_Controller {
             if($response == true)
             {
                 $data['page_name']='categories/editcategories';
+                $data['page_title']='Categories Edit Form';
                 $this->load->view($this->page_path,$data);
             }
             else{
